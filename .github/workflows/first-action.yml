@@ -1,0 +1,10 @@
+name: first-action
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -name: print-hello
+      run: echo "Hello World"
